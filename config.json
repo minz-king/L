@@ -47,7 +47,7 @@
     "notes": "if you enable this feature, only the ids in the whiteListIds section can use the bot"
   },
   "nickNameBot": "Zenith | remake",
-  "prefix": "!",
+  "prefix": "/",
   "database": {
     "type": "sqlite",
     "uriMongodb": "",
@@ -102,10 +102,10 @@
   },
   "autoRefreshFbstate": true,
   "autoReloginWhenChangeAccount": false,
-  "autoRestartWhenListenMqttError": true,
+  "autoRestartWhenListenMqttError": false,
   "restartListenMqtt": {
     "enable": true,
-    "timeRestart": null,
+    "timeRestart": 1000000,
     "delayAfterStopListening": 2000,
     "logNoti": true,
     "notes": "the value of timeRestart and delayAfterStopListening is milisecond, You shouldn't edit this if you don't know what it is"
