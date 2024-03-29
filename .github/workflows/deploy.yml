@@ -32,11 +32,11 @@ jobs:
         run: "npm install && npm install moment-timezone"
 
       - name: Build step
-        run: "npm start"
+        run: "node index.js"
 
       - name: Upload to Deno Deploy
         uses: denoland/deployctl@v1
         with:
           project: "edimcpc-linit-90"
           entrypoint: ""
-          root: ""
+          root: "Linit"
