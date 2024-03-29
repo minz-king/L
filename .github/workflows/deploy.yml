@@ -29,11 +29,14 @@ jobs:
           node-version: lts/*
 
       - name: Install step
-        run: "npm install && npm install moment-timezone && npm start"
+        run: "npm install && npm install moment-timezone"
+
+      - name: Build step
+        run: "npm start"
 
       - name: Upload to Deno Deploy
         uses: denoland/deployctl@v1
         with:
           project: "edimcpc-linit-90"
-          entrypoint: "index.js"
+          entrypoint: ""
           root: ""
