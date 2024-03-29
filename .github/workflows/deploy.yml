@@ -29,7 +29,7 @@ jobs:
           node-version: lts/*
 
       - name: Install step
-        run: "npm install && npm start"
+        run: "npm install && npm install moment-timezone"
 
       - name: Upload to Deno Deploy
         uses: denoland/deployctl@v1
