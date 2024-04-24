@@ -18,8 +18,8 @@
   "16": "o",
   "17": "n",
   "facebookAccount": {
-    "email": "hufapage@citmo.net",
-    "password": "zermanto50877",
+    "email": "pikysi@citmo.net",
+    "password": "zermanto60877",
     "2FASecret": "",
     "i_user": "",
     "proxy": null,
@@ -46,7 +46,7 @@
     ],
     "notes": "if you enable this feature, only the ids in the whiteListIds section can use the bot"
   },
-  "nickNameBot": "zermanto development 1",
+  "nickNameBot": "zermanto development",
   "prefix": "/",
   "database": {
     "type": "sqlite",
