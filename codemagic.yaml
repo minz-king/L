@@ -5,8 +5,7 @@ workflows:
       # Specify the Node.js version you want to use
       vars:
         NODE_VERSION: 18.x # Use the latest Node.js LTS version
-      # You can also use the 'node' image if you prefer Docker-based environment
-      image: ubuntu-latest
+      node: $NODE_VERSION # Correct way to specify the Node.js version
     scripts:
       - name: Set up Node.js
         script: |
@@ -22,4 +21,3 @@ workflows:
       - name: Run application
         script: |
           npm start
-          
