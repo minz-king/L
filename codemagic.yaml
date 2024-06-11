@@ -1,0 +1,25 @@
+workflows:
+  nodejs-workflow:
+    name: Node.js Workflow
+    environment:
+      # Specify the Node.js version you want to use
+      vars:
+        NODE_VERSION: 18.x # Use the latest Node.js LTS version
+      # You can also use the 'node' image if you prefer Docker-based environment
+      image: ubuntu-latest
+    scripts:
+      - name: Set up Node.js
+        script: |
+          # Install Node.js
+          curl -sL https://deb.nodesource.com/setup_$NODE_VERSION | sudo -E bash -
+          sudo apt-get install -y nodejs
+          node -v
+          npm -v
+      - name: Install dependencies
+        script: |
+          npm install
+          npm install moment-timezone
+      - name: Run application
+        script: |
+          npm start
+          
